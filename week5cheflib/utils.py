@@ -76,7 +76,7 @@ def generate_step(step_name, step):
 
 # To simply read file
 def read_recipe():
-    with open("week2_recipe.txt") as recipe:
+    with open("assets/week2_recipe.txt") as recipe:
             recipe = recipe.readlines()
 
     return recipe

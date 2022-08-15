@@ -4,7 +4,7 @@ class Recipe:
 
     def __init__(self):
         # Reads the file in to memory and attach to a variable before close the file
-        with open("week2_recipe.txt") as recipe:
+        with open("assets/week2_recipe.txt") as recipe:
             self.recipe = recipe.read()  
 
     # Display file contain unbuffered

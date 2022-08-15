@@ -67,7 +67,7 @@ def generate_step(step_name, step):
     return f" - Add {pronoun} {ingredient_name} - {ingredients}\n"
 
 def read_recipe():
-    with open("week2_recipe.txt") as recipe:
+    with open("assets/week2_recipe.txt") as recipe:
             recipe = recipe.readlines()
 
     return recipe  
@@ -99,7 +99,7 @@ class Chef:
 
     # Give user Choices to choose from the buffet
     def take_orders(self):
-        self.servings = ask_for_digits("You many plates would you like to order", self.max_servings_at_once)
+        self.servings = ask_for_digits("How many plates would you like to order", self.max_servings_at_once)
         for _ in range(self.servings):
             name = questions("What's your name?")
             # To 
